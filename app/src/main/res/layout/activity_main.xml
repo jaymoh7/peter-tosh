@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputEditText"
+        style="@style/InputEditTextStyle"
+        android:hint="Enter a number"
+        android:inputType="text"/>
+
+    <!-- Numeric Input Buttons -->
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="4"
+        android:layout_gravity="center"
+        tools:ignore="ExtraText">
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="1"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="2"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="3"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="4"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="5"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="6"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="7"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="8"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="9"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="0"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="A"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="B"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="C"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="D"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="E"
+            android:onClick="onButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="F"
+            android:onClick="onButtonClick"/>
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="Backspace"
+            android:onClick="onBackspaceButtonClick"/>
+
+        <Button
+            style="@style/NumericButtonStyle"
+            android:text="="
+            android:onClick="onEqualButtonClick"/>
+
+    </GridLayout>
+
+
+    <!-- Conversion and Result Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp">
+
+        <Button
+            style="@style/ConversionButtonStyle"
+            android:text="DEC"
+            android:layout_weight="1"
+            android:onClick="onDecButtonClick"/>
+
+        <Button
+            style="@style/ConversionButtonStyle"
+            android:text="BIN"
+            android:layout_weight="1"
+            android:onClick="onBinButtonClick"/>
+
+        <Button
+            style="@style/ConversionButtonStyle"
+            android:text="OCT"
+            android:layout_weight="1"
+            android:onClick="onOctButtonClick"/>
+
+        <Button
+            style="@style/ConversionButtonStyle"
+            android:text="HEX"
+            android:layout_weight="1"
+            android:onClick="onHexButtonClick"/>
+    </LinearLayout>
+
+    <!-- Result Display -->
+    <TextView
+        android:id="@+id/resultTextView"
+        style="@style/ResultTextViewStyle"
+        android:text="Result will be displayed here"
+        android:textAlignment="center"/>
+</LinearLayout>
